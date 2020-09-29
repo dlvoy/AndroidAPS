@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Version for small screens, like Uniherz Atom, forcing fixed size of summary table and scroll -->
+<?xml version="1.0" encoding="utf-8"?><!-- Version vertical layout... but who tries that anyway?! -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -7,8 +7,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:maxHeight="210dp"
+        android:layout_height="90sp"
+        android:maxHeight="90sp"
         android:scrollbarAlwaysDrawVerticalTrack="true">
 
         <TableLayout

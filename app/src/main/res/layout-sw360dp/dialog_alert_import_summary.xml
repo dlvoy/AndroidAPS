@@ -1,25 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Version for small screens, like Uniherz Atom, forcing fixed size of summary table and scroll -->
+<?xml version="1.0" encoding="utf-8"?><!-- Version for standard screens, where all summary items can fit -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingBottom="10dp">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:maxHeight="210dp"
-        android:scrollbarAlwaysDrawVerticalTrack="true">
-
-        <TableLayout
-            android:id="@+id/summary_table"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:isScrollContainer="true"
-            android:stretchColumns="2" />
-    </ScrollView>
+    <TableLayout
+        android:id="@+id/summary_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:stretchColumns="2" />
 
     <Button
         android:id="@+id/summary_details_btn"
@@ -34,4 +26,5 @@
         android:text="@string/check_preferences_details_btn"
         android:textColor="@color/colorTreatmentButton"
         android:visibility="gone" />
+
 </LinearLayout>
