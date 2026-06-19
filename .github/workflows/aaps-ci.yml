@@ -193,7 +193,7 @@ jobs:
 
       - name: Fetch selected tag from upstream
         run: |
-          git remote add upstream https://github.com/nightscout/AndroidAPS.git || true
+          git remote add upstream https://github.com/dlvoy/AndroidAPS.git || true
           git fetch upstream refs/tags/${{ github.event.inputs.tagName }}:refs/tags/${{ github.event.inputs.tagName }}
           echo "✅ Tag ${{ github.event.inputs.tagName }} fetched from upstream."
 
